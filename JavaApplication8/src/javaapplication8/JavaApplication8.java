@@ -36,7 +36,6 @@ public class JavaApplication8 {
             lsin.add(d);
         }
         System.out.println("BreakPoint 1");
-        
         double dacos[] = new double[200];
         for (int i = 0; i < dacos.length; i++) {
             dacos[i] = cos((2 * PI * i) / dacos.length);
@@ -56,6 +55,22 @@ public class JavaApplication8 {
             abdefl.add( new ABCDEF());
         }
         System.out.println("BreakPoint 4");
+        
+        lcos.set(3,null);
+        System.out.println("BreakPoint 5");
+        
+        lcos.set(5,Double.NaN);
+        lcos.set(6,Double.NaN);
+        System.out.println("BreakPoint 6");
+        
+        lcos.set(8,Double.POSITIVE_INFINITY);
+        lcos.set(9,Double.POSITIVE_INFINITY);
+        System.out.println("BreakPoint 7");
+        
+        lcos.set(11,Double.NEGATIVE_INFINITY);
+        lcos.set(12,Double.NEGATIVE_INFINITY);
+        System.out.println("BreakPoint 7");
+        
     }
 
 }

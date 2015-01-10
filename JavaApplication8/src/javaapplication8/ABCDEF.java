@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class ABCDEF {
     public float a,b,c,d,e,f;
-    
+    private float pz;
     private static Random randi = new Random();
     
     ABCDEF() {
@@ -23,5 +23,10 @@ public class ABCDEF {
         d = randi.nextFloat();
         e = randi.nextFloat();
         f = randi.nextFloat();
+        pz = randi.nextFloat();
+    }
+    
+    public double getSum() {
+        return a+b+c+d+e+f;
     }
 }
